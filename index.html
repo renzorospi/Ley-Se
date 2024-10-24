@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeySe</title>
+    <script src=" https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <!-- libreria de ambientes -->
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  
+    <!-- LIBRERIAS DE COLISIONES Y FÍSICAS-->
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-extras@0.1.2/dist/aframe-physics-extras.min.js"></script>
+  
+    <!-- MOVIMIENTO DE LA CAMARA -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+  </head>
+  
+  <body>
+  
+    <!-- colocar  -- "debug: true" en physics para visualizar el tamaño de la solidez del objeto -->
+    <a-scene physics="gravity:0; debug: false">
+  
+      <a-entity movement-controls kinematic-body rotation="0 -90 0 " position="-15 6 -18.273" >
+      <a-entity id="camera" camera   look-controls > 
+      
+      <!-- light="intensity:1; type:point; penumbra:0"  -->
+      
+      </a-entity>
+      </a-entity>
+      
+      <a-entity position="-12 5.75 -18.273" 
+      text="align: center; width: 4; wrapCount: 100; value: Mueve el celular o arrastra con el dedo" rotation="0 270 0" scale="3.8 3.8 3.8" id="instrucciones">
+      </a-entity>
+      <a-entity position="-12 5.25 -18.273" 
+      text="align: center; width: 4; wrapCount: 100; value: y presiona la pantalla para avanzar." rotation="0 270 0" scale="3.8 3.8 3.8" id="instrucciones">
+      </a-entity>
+
+
+      <a-assets>
+
+        <video id="leyse" autoplay loop="true" src="assets/leyse.mp4"></video>
+      
+      </a-assets>
+      <a-light type="ambient" intensity="0.4" position="-1 2 1" castShadow="true"></a-light>
+
+      <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" id="luz flyer" position="2.98532 21.69506 -3.26403" rotation="-110 0 0"></a-entity>
+    
+            <!-- Luz -->
+      <!-- <a-light type="directional" intensity="0.7" position="-1 2 1" castShadow="true"></a-light> -->
+
+
+      <!-- Plano (suelo) -->
+      <a-box src="#leyse" repeat="1" scale="160 0.1 90" rotation="0 90 0" position="31.803 -1.01117 -18.48256" material="repeat: 1 1" static-body></a-box>
+      <a-sky color="black"></a-sky>
+
+
+      <a-entity position="59.73826 2.84109 -5.27413" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 -115.30890218566843 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="59.73826 2.84109 -5.27413" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 -115.30890218566843 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="37.12271 2.84109 21.88736" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 -165.2736867100519 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="23.84731 2.84109 15.06419" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 131.75393682151332 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="3.57391 2.84109 6.49175" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 131.75393682151332 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="-2.45932 2.84109 -13.95847" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 111.63165905651881 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="9.85717 2.84109 -42.67501" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 44.84311479370901 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="31.08553 2.84109 -57.27978" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 9.106591195809305 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="31.08553 2.84109 -57.27978" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 9.106591195809305 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="64.90515 2.84109 -41.79" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 -45.25163370163729 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    <a-entity position="67.62653 2.84109 -25.03845" text="align: center; width: 4; wrapCount: 100; value: TEXTO / EXPLICACION" rotation="0 -67.03090541015014 0" scale="14.74348 14.74348 14.74348" id="texto1">
+    </a-entity>
+
+    </a-scene>
+  </body>
+</html>
