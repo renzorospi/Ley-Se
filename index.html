@@ -32,13 +32,13 @@
 
       <!-- Assets y luces -->
       <a-assets>
-        <video id="leyse" autoplay loop="true" src="assets/leyse.mp4"></video>
+        <image id="leyse" autoplay loop="true" src="assets/leyse.png"></image>
       </a-assets>
       <a-light type="ambient" intensity="0.4" position="-1 2 1" castShadow="true"></a-light>
       <a-entity light="type: spot; angle: 30; groundColor: #fff; penumbra: 1; intensity: 0.3" position="2.98532 21.69506 -3.26403" rotation="-110 0 0"></a-entity>
 
       <!-- Plano (suelo) -->
-      <a-video src="#leyse" repeat="1" scale="160 0.1 90" rotation="0 90 0" position="31.803 -1.01117 -18.48256"></a-video>
+      <!-- <a-video src="#leyse" repeat="1" scale="160 0.1 90" rotation="0 90 0" position="31.803 -1.01117 -18.48256"></a-video> -->
       <a-box src="#leyse" repeat="1" scale="160 0.1 90" rotation="0 90 0" position="31.803 -1.01117 -18.48256" static-body></a-box>
       
       <!-- Cielo degradado -->
@@ -47,13 +47,13 @@
       <!-- Textos cardinales -->
       <a-entity id="gokuche" position="31.77956 2.84327 19.73925" text="align: center; width: 4; wrapCount: 100; value: 1. Gokuche" rotation="0 180 0" scale="14.74348 14.74348 14.74348">
       </a-entity>
-    <a-entity id="Siashkua" position="68.43981 2.84327 -18.42393" text="align: center; width: 4; wrapCount: 100; value: 2. Siashkua" rotation="0 270 0" scale="14.74348 14.74348 14.74348">
+    <a-entity id="niuwashkue" position="68.43981 2.84327 -18.42393" text="align: center; width: 4; wrapCount: 100; value: 4. Niuwashkue " rotation="0 270 0" scale="14.74348 14.74348 14.74348">
     </a-entity>
 
     <a-entity id="zadziwué" position="31.77956 2.84327 -54.49492" text="align: center; width: 4; wrapCount: 100; value: 3. Zadziwué" rotation="" scale="14.74348 14.74348 14.74348">
     </a-entity>
 
-    <a-entity id="niuwashkue" position="-7.27547 2.84327 -18.23924" text="align: center; width: 4; wrapCount: 100; value: 4. Niuwashkue" rotation="0 90 0" scale="14.74348 14.74348 14.74348">
+    <a-entity id="Siashkua" position="-7.27547 2.84327 -18.23924" text="align: center; width: 4; wrapCount: 100; value: 2. Siashkua" rotation="0 90 0" scale="14.74348 14.74348 14.74348">
     </a-entity>
 
     </a-scene>
